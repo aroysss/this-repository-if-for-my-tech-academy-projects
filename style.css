@@ -1,0 +1,31 @@
+*{
+   margin: 0;
+   padding: 0;
+   font-family: sans-serif;
+}
+.banner{
+	width: 100%
+	height: 100vh;
+	backgroud-image: linear-
+	gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(background.jpg);
+	background-size: cover;
+	background-position: center;
+}
+.floor-plan{
+	width:300px;
+}
+.industrial{
+	width:300px;
+}
+.cottage{
+	width:300px;
+}
+.barndominium{
+	width:300px;
+}
+.modern{
+	width:300px;
+}
+.rustic{
+	width:300px;
+}
