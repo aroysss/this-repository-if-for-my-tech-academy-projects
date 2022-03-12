@@ -1,15 +1,61 @@
-*{
-   margin: 0;
+html {
+   margin: 500px;
    padding: 0;
+   text-align: center;
    font-family: sans-serif;
 }
-.banner{
-	width: 100%
-	height: 100vh;
-	backgroud-image: linear-
-	gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(background.jpg);
-	background-size: cover;
-	background-position: center;
+.gallery{
+	margin:50px;
+	padding:0;
+	text-align:center;
+	font-family: sans-serif;
+	color:black;
+}
+.photo-container{
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	grid-auto-rows: repeat(3, 12rem);
+	grid-gap:10px;
+	position:relative;
+}
+.gallery-item{
+	width:100%;
+	height:100%;
+	position:relative;
+}
+.gallery-item .photo{
+	width:100%;
+	height:100%;
+	overflow:hidden;
+}
+.gallery-item .photo .img{
+	width:100%;
+	height:100%;
+	object-fit:cover;
+	object-position: 50% 50%;
+	transition: .5s ease-in-out;
+}
+.gallery-item:hover .photo .img{
+	transform:scale(1.5);
+}
+.gallery-item .text{
+	opacity:0;
+	position:relative;
+	top:100%;
+	left:100%;
+	transform:translate(-50%, -50%);
+	color:#fff;
+	font-size:25px;
+	pointer-events:none;
+}
+.navbar{
+	width:80%;
+	margin:auto;
+	padding: 30px;
+	display: center;
+	justify-content: space-between;
+	z-index:4;
+	transition:.3s ease-in-out;
 }
 .floor-plan{
 	width:300px;
@@ -27,5 +73,8 @@
 	width:300px;
 }
 .rustic{
+	width:300px;
+}
+.amenities{
 	width:300px;
 }
