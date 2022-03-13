@@ -1,0 +1,110 @@
+html {
+   margin: 500px;
+   padding: 0;
+   text-align: center;
+   font-family: sans-serif;
+}
+.gallery{
+	margin:43px;
+	padding:0;
+	text-align:center;
+	font-family: sans-serif;
+	color:black;
+}
+.photo-container{
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	grid-auto-rows: repeat(3, 12rem);
+	grid-gap:10px;
+	position:relative;
+}
+.gallery-item{
+	width:100%;
+	height:100%;
+	position:relative;
+}
+.gallery-item .photo{
+	width:100%;
+	height:100%;
+	overflow:hidden;
+	transform: scale(1.2);
+	transition: transform .3s;
+	filter: .3s;
+}
+.gallery-item .photo .img{
+	width:100%;
+	height:100%;
+	object-fit: cover;
+	object-position: 50% 50%;
+}
+.gallery-item:hover .photo{
+	transform: scale (1.2);
+	filter: blur(2px);
+}	
+.gallery-item:hover .text{
+	top:50;
+	bottom:50;
+	transform:scale(1.2);
+	opacity: 2;
+	filter: none;
+}
+.gallery-item .text{
+	opacity:2;
+	position:absolute;
+	top:50%;
+	left:50%;
+	right:50%;
+	transform:translate(-50%, -50%);
+	color:#fff;
+	font-size:20px;
+	font-weight:2000px;
+	pointer-events:none;
+	display:flex;
+	flex-direction:left;
+	align-items: center;
+	justify-content:center;
+	transition:opacitcy 2;
+	filter: none;
+}
+.gallery-item .text span:before{
+	width:100%;
+	opacity:0;
+}
+.gallery-item .text span:after{
+	width:100%;
+	opacity: 2;
+}
+.navbar{
+	width: 80%;
+	margin:auto;
+	padding: 30px;
+	display: center;
+	justify-content: space-between;
+	z-index:4;
+	transition:.3s ease-in-out;
+}
+.floor-plan{
+	width:400px;
+}
+.industrial{
+	width:400px;
+}
+.cottage{
+	width:400px;
+}
+.barndominium{
+	width:400px;
+}
+.modern{
+	width:400px;
+}
+.rustic{
+	width:400px;
+}
+.amenities{
+	width:400px;
+}
+.contact{
+	
+.rsvp{
+	
