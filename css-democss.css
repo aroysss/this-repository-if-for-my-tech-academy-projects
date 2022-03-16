@@ -1,0 +1,57 @@
+body{
+	background-color:darkkhaki;
+
+}
+h1{
+	color:#fff;
+	margin-left:100px;
+	text-shadow: 1px .5px 4px grey;
+}
+.container{
+	width: 450px;
+	height: 450px;
+	background-color:darkseagreen;
+	border: 2px solid black;
+	border-radius:5% 5% 5% 5%;
+}
+
+/*-----------------------------------------
+SELECT ALL SQUARES IN THE ARRAY
+-------------------------------------------*/
+.container .squares:nth-child(-n+4){
+	background-image: url("./one-page website/icons.png");
+	color: #fff;
+	float:left;
+	width: 100px;
+	height: 100px;
+	margin:5px;
+	border: 1px solid white;
+	border-radius: 25%;
+	cursor: pointer;
+}
+/*-----------------------------------------
+SELECT ALL SQUARES PARAGRAPHS IN THE ARRAY
+-------------------------------------------*/
+.squares:nth-child(-n+4) p{
+	font-family: roboto;
+	font-size:1cm;
+	font-weight:900;
+	text-align:center;
+	margin:0;
+	text-shadow: 2px 1px 4px grey:
+}
+/*-----------------------------------------
+individually select a square in the array
+-------------------------------------------*/
+.squares:nth-child(1){
+	background: darkgrey;
+}
+.squares:nth-child(2){
+	background:darkolivegreen;
+}
+.squares:nth-child(3){
+	background: darkgrey;
+}
+.squares:nth-child(4){
+	background: darkolivegreen;
+}
