@@ -55,3 +55,10 @@ individually select a square in the array
 .squares:nth-child(4){
 	background: darkolivegreen;
 }
+.squares:hover{
+	top:50;
+	bottom:50;
+	transform:scale(1.2);
+	opacity: 2;
+	filter: none;
+}
