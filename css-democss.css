@@ -28,6 +28,7 @@ SELECT ALL SQUARES IN THE ARRAY
 	border: 1px solid white;
 	border-radius: 25%;
 	cursor: pointer;
+	transition: transform .5s ease-in-out;
 }
 /*-----------------------------------------
 SELECT ALL SQUARES PARAGRAPHS IN THE ARRAY
@@ -55,13 +56,26 @@ individually select a square in the array
 .squares:nth-child(4){
 	background: darkolivegreen;
 }
+/*----------------------------------------
+HOVER
+------------------------------------------*/
 .container .squares:nth-child(-n+4):hover {
 	background-image: url("./one-page website/icons2.png");
+	transform: scale(.5);
+	animation-name: race;
+	animation-duration:2.5s;
+	animation-iteration-count: infinite;
+	animation-timing-function: cubic-bezier(2.5,.2,.3,2);
 }
 .squares:hover{
-	top:50;
-	bottom:50;
-	transform:scale(1.2);
-	opacity: 2;
-	filter: none;
+	background: rgb(0,0,0,0.20);
+}
+@keyframes race {
+	0%, 100% {
+		transform: translateY(0px);
+		background-image:url("./one-page website/icons2.png");
+	}
+	50% {
+		transform: translateY(330px);
+	}	
 }
