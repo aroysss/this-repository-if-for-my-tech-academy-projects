@@ -55,6 +55,9 @@ individually select a square in the array
 .squares:nth-child(4){
 	background: darkolivegreen;
 }
+.container .squares:nth-child(-n+4):hover {
+	background-image: url("./one-page website/icons2.png");
+}
 .squares:hover{
 	top:50;
 	bottom:50;
