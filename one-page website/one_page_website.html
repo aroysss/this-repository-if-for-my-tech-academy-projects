@@ -4,31 +4,82 @@
 <title>Title</title>
 	<link rel="stylesheet" href="CSS/one_page_website.css"/>
 	<link rel="icon" type="image" href="icons.png" alt="title">
+	<script src="main.js"></script>
 </head>
 <body style="background-color:rgb(121, 69, 33);"></body>
 	<!--HOME-->
 
 		<div class="heading">
-				<h1>Youtube Video</h1>
+				<h1>Art Website</h1>
 		</div>
 	<!-- END HOME-->
 	
 	<!-- welcome-->
 	<section class="welcome">
-		<div>
-			<h1><i>Welcome to the Cool Kids Cafe</i></h1>
-
-			
-				<!--video-->
-				<div>
-<iframe width="900" height="600" src="https://www.youtube.com/embed/A6EjcJ2L1Dg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div
-				<!--video-->
-				
-			</div>
-		</div>
+			<h1><i>Enjoy the art!</i></h1>
 		<footer>
 		<p></p>
+		
+<div class="row">
+  <div class="column">
+    <img src="img1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="img2.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="img3.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+  </div>
+  <div class="column">
+    <img src="img4.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+  </div>
+</div>
+
+<!-- lightbox -->
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+      <img src="img1_wide.jpg">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+      <img src="img2_wide.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+      <img src="img3_wide.jpg">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+      <img src="img4_wide.jpg">
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+   
+   <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+    <!-- thumbnail -->
+    <div class="column">
+      <img class="demo" src="img1.jpg" onclick="currentSlide(1)" alt="Nature">
+    </div>
+    <div class="column">
+      <img class="demo" src="img2.jpg" onclick="currentSlide(2)" alt="Snow">
+    </div>
+    <div class="column">
+      <img class="demo" src="img3.jpg" onclick="currentSlide(3)" alt="Mountains">
+    </div>
+    <div class="column">
+      <img class="demo" src="img4.jpg" onclick="currentSlide(4)" alt="Lights">
+    </div>
+  </div>
+</div>
+		
+		
+		
 <section class="input">
 	<input id="check1" type="checkbox"/>
 	<label for="check1">Vibing</label><br>
