@@ -7,6 +7,7 @@ html{
  }
  body {
 	 margin: 0;
+ }
  .heading {
      margin: center;
      padding:5px;
@@ -122,8 +123,12 @@ html{
   padding: 2px 16px;
   color: white;
 }
+.img {
+	width: 100%;
+	height: 500px;
+}
 
-img.demo {
+.img.demo {
   opacity: 0.6;
 }
 
@@ -132,7 +137,7 @@ img.demo {
   opacity: 1;
 }
 
-img.hover-shadow {
+.img.hover-shadow {
   transition: 0.3s;
 }
 
