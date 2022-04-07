@@ -24,6 +24,9 @@ html{
 }
 
 /* lightbox */
+* {
+  box-sizing: border-box;
+}
 .row > .column {
   padding: 0 8px;
 }
@@ -36,7 +39,7 @@ html{
 
 .column {
   float: left;
-  width: 50%;
+  width: 25%;
 }
 
 .modal {
@@ -97,7 +100,10 @@ html{
   user-select: none;
   -webkit-user-select: none;
 }
-
+.prev {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
