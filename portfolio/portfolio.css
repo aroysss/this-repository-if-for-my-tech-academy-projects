@@ -7,7 +7,7 @@ body {
     opacity: 1;
     transition: 3s opacity;
     letter-spacing: .2vw;
-    font-family: Avant Garde, Helvetica;
+	font-family: "Trebuchet MS", Optima;
     font-size: 1.5vw; 
     overflow-x: hidden;
     user-select: none;
@@ -19,7 +19,7 @@ body.fade-out {
 
 h1 {
     text-transform: uppercase;
-    font-family: "Trebuchet MS", Optima; 
+    font-family: Cormorant SC; 
     text-align: center; 
     margin-top: 3%; 
     color: #1a1a1a; 
@@ -38,7 +38,7 @@ h1:hover {
 }
 
 p {
-    font-family: Perpetua, Rockwell Extra Bold;
+    font-family: Cormorant Extra Bold;
     text-align: justify; 
     letter-spacing: .1vw; 
     font-size: 2.5vw; 
@@ -114,7 +114,7 @@ footer {
     color: white; 
     padding: .75vw 1vw; 
     text-decoration: none;
-    font-family: Avant Garde, Helvetica; 
+    font-family: Chinla; 
     font-size: 1.5vw; 
     text-align: center; 
     position: relative; 
@@ -239,7 +239,7 @@ footer {
     bottom: 0;
     width: 100%;
     text-align: center; 
-    font-family: Perpetua, Rockwell Extra Bold;
+    font-family: Adamina Extra Bold;
     letter-spacing: .1vw; 
     font-size: 1.5vw;
     background-color: rgba(0, 0, 0, 0.8);
