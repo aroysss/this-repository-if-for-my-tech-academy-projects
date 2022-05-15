@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href='https://fonts.googleapis.com/css?family=Crafty Girls' rel="stylesheet">
+<title>Puppies</title>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+<button type="button" class="btn-outline-primary">Breeds</button>
+<button type="button" class="btn-outline-primary">Locations</button>
+<button type="button" class="btn-outline-primary">Contact</button>
+</nav>
+
+<h1 align="center">Adopt Now!</h1>
+<form>
+  <div align="center" class="row">
+    <div class="col">
+      <input type="text" class="form-control" placeholder="Pitbulls, Kittens, etc.">
+    </div>
+    <div class="col">
+      <input type="text" class="form-control" placeholder="Zip code or County">
+    </div>
+  </div>
+</form>
+
+<style>
+
+.btn-outline-primary {
+  background-color: white;
+  color: black;
+  border: 2px solid #555555;
+}
+
+h1 {
+	font-family: Crafty Girls;
+	color: black;
+}
+
+body {
+	background-color: lightcyan;
+}
+
+.mySlides {
+	display:none;
+	padding: 100px;
+}
+
+container-fluid {
+	width: 100%;
+	align: center;
+}
+
+footer {
+   padding:200px;
+   position:relative;
+   background:  url(puppies.jpg);
+   text-align: center;
+   left:0px;
+   bottom:0px;
+   height:30px;
+
+navbar-brand {
+	color: blue;
+	padding: auto;
+}
+</style>
+<body>
+<div class="w3-content w3-display-container">
+
+<div class="w3-display-container mySlides">
+  <img src="pup1.jpg" style="width:100%">
+  <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+    <p align="center">Mr.Fluffy</p>
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="pup2.jpg" style="width:100%">
+  <div class="w3-display-bottomright w3-large w3-container w3-padding-16 w3-black">
+    <p align="center">Brandon</p>
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="pup3.jpg" style="width:100%">
+  <div class="w3-display-topleft w3-large w3-container w3-padding-16 w3-black">
+    <p align="center">Christine</p>
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="pup4.jpg" style="width:100%">
+  <div class="w3-display-topright w3-large w3-container w3-padding-16 w3-black">
+    <p align="center">Bella and Douglas</p>
+  </div>
+</div>
+
+
+<script>
+var slideIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > x.length) {slideIndex = 1}
+  x[slideIndex-1].style.display = "block";
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+	<footer>
+				<div class="footer" style="background-color: rgba(0,0,0,0.22);">
+				<h1 style="color: saddlebrown;"><b>Adopt your next bestfriend right here, right now!</b></h1>
+                <a href="#" style="color: white;">Terms of Use</a> 
+                <span class="text-muted mx-2">|</span> 
+                <a href="#" style="color: white;">Privacy Policy</a>
+				<br><a href="#" style="color: white;">How to care for my puppy</a>
+				</div>
+    </footer>
+</body>
+</html>
