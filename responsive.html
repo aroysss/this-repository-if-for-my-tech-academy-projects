@@ -3,14 +3,16 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Bootstrap Responsive Layout Example</title>
+<title>Responsive</title>
+<link href='https://fonts.googleapis.com/css?family=Julius Sans One' rel="stylesheet">
 <script src="js/bootstrap.bundle.min.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
+<h1 align="center">Plan your trip to Bali !</h1>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
-        <a href="#" class="navbar-brand">Tutorial Republic</a>
-        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -29,79 +31,92 @@
 </nav>
 
 <style>
+body {
+	background-image: linear-gradient(0deg, rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url('bali1.jpg');
+}
+
+h1 {
+	font-family: Julius Sans One;
+	color: white;
+}
+
 div.gallery {
-  margin: 5px;
-  border: 1px solid #ccc;
+  margin: 26px;
   float: left;
   width: 180px;
+  shadow: 2px;
 }
 
 div.gallery:hover {
-  border: 1px solid #777;
+  transform:scale(1.2);
+  box-shadow: 4px 4px;
 }
 
 div.gallery img {
   width: 100%;
-  height: auto;
+  height: 20vh;
 }
 
 div.desc {
-  padding: 15px;
+  padding: 10px;
   text-align: center;
+  color: white;
 }
+
+footer {
+   position: fixed;
+   text-align: center;
+   left:0px;
+   bottom:0px;
+   height:20px;
+}
+
 </style>
 </head>
 <body>
 
 <div class="gallery">
-  <a target="_blank" href="img_5terre.jpg">
-    <img src="img_5terre.jpg" alt="Cinque Terre" width="600" height="400">
+  <a target="_blank" href="family.jpg">
+    <img src="family.jpg">
   </a>
-  <div class="desc">Add a description of the image here</div>
+  <div class="desc">Plan your next Family Vacay here!</div>
 </div>
 
 <div class="gallery">
-  <a target="_blank" href="img_forest.jpg">
-    <img src="img_forest.jpg" alt="Forest" width="600" height="400">
+  <a target="_blank" href="events.jpg">
+    <img src="events.jpg">
   </a>
-  <div class="desc">Add a description of the image here</div>
+  <div class="desc">Find Events Hosted at your Resort!</div>
 </div>
 
 <div class="gallery">
-  <a target="_blank" href="img_lights.jpg">
-    <img src="img_lights.jpg" alt="Northern Lights" width="600" height="400">
+  <a target="_blank" href="couples.jpg">
+    <img src="couples.jpg">
   </a>
-  <div class="desc">Add a description of the image here</div>
+  <div class="desc">Start your Couples Getaway here!</div>
 </div>
 
 <div class="gallery">
-  <a target="_blank" href="img_mountains.jpg">
-    <img src="img_mountains.jpg" alt="Mountains" width="600" height="400">
+  <a target="_blank" href="solo.jpg">
+    <img src="solo.jpg">
   </a>
-  <div class="desc">Add a description of the image here</div>
+  <div class="desc">Go To Bali Solo!</div>
+  </div>
+  <div class="gallery">
+  <a target="_blank" href="hotels.jpg">
+    <img src="hotels.jpg">
+  </a>
+  <div class="desc">Find Hotels</div>
+</div>
 </div>
 
-
-
-
-
-
-
-
-
-    <hr>
     <footer>
-        <div class="row">
-            <div class="col-md-6">
-                <p>Copyright &copy; 2021 Tutorial Republic</p>
             </div>
-            <div class="col-md-6 text-md-end">
-                <a href="#" class="text-dark">Terms of Use</a>
-                <span class="text-muted mx-2">|</span>
-                <a href="#" class="text-dark">Privacy Policy</a>
+				
+                <a href="#">Terms of Use</a>
+                <span>|</span>
+                <a href="#">Privacy Policy</a>
             </div>
-        </div>
     </footer>
-</div>
 </body>
 </html>
