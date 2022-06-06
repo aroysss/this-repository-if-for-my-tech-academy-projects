@@ -1,1 +1,1 @@
-# this-repository-if-for-my-tech-academy-projects
+# this is the repository for all of my Tech Academy projects. 
