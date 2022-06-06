@@ -1,2 +1,0 @@
-name: adriana
-adress: 555 memory lane
